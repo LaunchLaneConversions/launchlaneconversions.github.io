@@ -144,6 +144,7 @@ footer{background:var(--navy2);border-top:1px solid var(--border);padding:2rem 5
   .stat+.stat{border-left:none;padding-left:0}
   .hero-inner{grid-template-columns:1fr}
   .hero-logo-wrap{display:none}
+  #process-grid{grid-template-columns:1fr 1fr}
 }
 </style>
 </head>
@@ -227,8 +228,8 @@ footer{background:var(--navy2);border-top:1px solid var(--border);padding:2rem 5
     <div class="svc-card">
       <div class="svc-num">03</div>
       <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M17 2H7a5 5 0 0 0-5 5v10a5 5 0 0 0 5 5h10a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5z"/><circle cx="12" cy="12" r="3"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></div>
-      <h3>Social Media</h3>
-      <p>We analyse your social media ad data to fine-tune targeting, bidding, and delivery — maximising the reach and performance of your campaigns across all major platforms.</p>
+      <h3>Social Media Ads</h3>
+      <p>Not running social media ads yet? You're leaving money on the table. We help businesses launch and optimise paid campaigns on Meta and TikTok — getting your brand in front of the right audience from day one, without the guesswork.</p>
     </div>
     <div class="svc-card">
       <div class="svc-num">04</div>
@@ -250,6 +251,55 @@ footer{background:var(--navy2);border-top:1px solid var(--border);padding:2rem 5
     </div>
   </div>
 </section>
+
+<section class="section" style="background:var(--navy)">
+  <div class="section-tag">How It Works</div>
+  <h2 class="section-title">Our <span class="blue">Process</span></h2>
+  <p style="color:var(--off-white);font-size:0.95rem;font-weight:300;max-width:50ch;margin-bottom:3rem;line-height:1.8">Click each step to see exactly how we turn your ad data into real results.</p>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem" id="process-grid">
+    <div class="proc-card active" onclick="selectStep(0)" style="background:var(--navy2);border:1px solid var(--border-blue);border-radius:4px;padding:1.8rem 1.5rem;cursor:pointer;transition:all 0.3s">
+      <div style="font-family:'Barlow Condensed',sans-serif;font-size:0.68rem;font-weight:700;color:var(--blue-light);letter-spacing:0.15em;margin-bottom:1rem">STEP 01</div>
+      <div style="width:44px;height:44px;border-radius:3px;background:var(--blue);display:flex;align-items:center;justify-content:center;margin-bottom:1rem">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      </div>
+      <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:1.2rem;font-weight:700;text-transform:uppercase;color:var(--white);margin-bottom:0.5rem">Audit</h3>
+      <p style="font-size:0.82rem;color:var(--muted);line-height:1.6;font-weight:300">We dig into your existing campaigns.</p>
+    </div>
+    <div class="proc-card" onclick="selectStep(1)" style="background:var(--navy3);border:1px solid var(--border);border-radius:4px;padding:1.8rem 1.5rem;cursor:pointer;transition:all 0.3s">
+      <div style="font-family:'Barlow Condensed',sans-serif;font-size:0.68rem;font-weight:700;color:var(--blue-light);letter-spacing:0.15em;margin-bottom:1rem">STEP 02</div>
+      <div style="width:44px;height:44px;border-radius:3px;background:var(--navy2);border:1px solid var(--border-blue);display:flex;align-items:center;justify-content:center;margin-bottom:1rem">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+      </div>
+      <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:1.2rem;font-weight:700;text-transform:uppercase;color:var(--white);margin-bottom:0.5rem">Analyse</h3>
+      <p style="font-size:0.82rem;color:var(--muted);line-height:1.6;font-weight:300">We find what's wasting your budget.</p>
+    </div>
+    <div class="proc-card" onclick="selectStep(2)" style="background:var(--navy3);border:1px solid var(--border);border-radius:4px;padding:1.8rem 1.5rem;cursor:pointer;transition:all 0.3s">
+      <div style="font-family:'Barlow Condensed',sans-serif;font-size:0.68rem;font-weight:700;color:var(--blue-light);letter-spacing:0.15em;margin-bottom:1rem">STEP 03</div>
+      <div style="width:44px;height:44px;border-radius:3px;background:var(--navy2);border:1px solid var(--border-blue);display:flex;align-items:center;justify-content:center;margin-bottom:1rem">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+      </div>
+      <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:1.2rem;font-weight:700;text-transform:uppercase;color:var(--white);margin-bottom:0.5rem">Optimise</h3>
+      <p style="font-size:0.82rem;color:var(--muted);line-height:1.6;font-weight:300">We fix targeting, bidding and delivery.</p>
+    </div>
+    <div class="proc-card" onclick="selectStep(3)" style="background:var(--navy3);border:1px solid var(--border);border-radius:4px;padding:1.8rem 1.5rem;cursor:pointer;transition:all 0.3s">
+      <div style="font-family:'Barlow Condensed',sans-serif;font-size:0.68rem;font-weight:700;color:var(--blue-light);letter-spacing:0.15em;margin-bottom:1rem">STEP 04</div>
+      <div style="width:44px;height:44px;border-radius:3px;background:var(--navy2);border:1px solid var(--border-blue);display:flex;align-items:center;justify-content:center;margin-bottom:1rem">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:1.2rem;font-weight:700;text-transform:uppercase;color:var(--white);margin-bottom:0.5rem">Success</h3>
+      <p style="font-size:0.82rem;color:var(--muted);line-height:1.6;font-weight:300">Your campaigns perform at their peak.</p>
+    </div>
+  </div>
+
+  <div id="step-detail" style="margin-top:2rem;background:var(--navy2);border:1px solid var(--border-blue);border-radius:4px;padding:2.5rem;transition:all 0.3s">
+    <div id="step-content">
+      <div style="font-family:'Barlow Condensed',sans-serif;font-size:0.72rem;font-weight:700;color:var(--blue-light);letter-spacing:0.15em;margin-bottom:0.8rem">STEP 01 — AUDIT</div>
+      <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:2rem;font-weight:800;text-transform:uppercase;color:var(--white);margin-bottom:1rem">We start by digging into your data</h3>
+      <p style="color:var(--off-white);font-size:0.95rem;line-height:1.85;font-weight:300;max-width:65ch">Before we touch anything, we do a full audit of your Meta, Google, and TikTok accounts. We look at your campaign structure, spend allocation, audience targeting, and historical performance to build a clear picture of exactly where things stand — and where the opportunities are.</p>
+    </div>
+  </div>
+</section>
+
 
 <section class="section" id="about" style="background:var(--navy)">
   <div class="about-grid">
@@ -362,11 +412,64 @@ footer{background:var(--navy2);border-top:1px solid var(--border);padding:2rem 5
   </ul>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 function toggleMenu(){
   document.getElementById('mobile-menu').classList.toggle('open');
 }
 function closeMenu(){
   document.getElementById('mobile-menu').classList.remove('open');
 }
-document.querySele
+
+var stepData = [
+  {
+    tag: "STEP 01 — AUDIT",
+    title: "We start by digging into your data",
+    body: "Before we touch anything, we do a full audit of your Meta, Google, and TikTok accounts. We look at your campaign structure, spend allocation, audience targeting, and historical performance to build a clear picture of exactly where things stand — and where the opportunities are."
+  },
+  {
+    tag: "STEP 02 — ANALYSE",
+    title: "We find exactly what's wasting your budget",
+    body: "Using real platform data, we identify underperforming audiences, inefficient bidding strategies, and wasted spend. We pinpoint the exact campaigns, ad sets, and creatives that are dragging your results down — so we know precisely what needs to change."
+  },
+  {
+    tag: "STEP 03 — OPTIMISE",
+    title: "We make your ads work harder",
+    body: "With a clear plan in place, we optimise your targeting, adjust bidding strategies, refine audience segmentation, and improve delivery across platforms. Every change is data-backed — no guesswork, no gut feelings, just decisions driven by what the numbers tell us."
+  },
+  {
+    tag: "STEP 04 — SUCCESS",
+    title: "Your campaigns hit their full potential",
+    body: "With the right targeting, smarter bidding, and optimised delivery in place, your ads start working the way they should. More conversions, lower cost per result, and a clear return on your spend — that is what success looks like at Launch Lane Conversions."
+  }
+];
+
+function selectStep(index) {
+  var cards = document.querySelectorAll('.proc-card');
+  cards.forEach(function(card, i) {
+    if (i === index) {
+      card.style.background = 'var(--navy2)';
+      card.style.borderColor = 'rgba(74,91,255,0.4)';
+    } else {
+      card.style.background = 'var(--navy3)';
+      card.style.borderColor = 'rgba(255,255,255,0.08)';
+    }
+  });
+  var s = stepData[index];
+  var tagStyle = "font-family:Barlow Condensed,sans-serif;font-size:0.72rem;font-weight:700;color:var(--blue-light);letter-spacing:0.15em;margin-bottom:0.8rem";
+  var titleStyle = "font-family:Barlow Condensed,sans-serif;font-size:2rem;font-weight:800;text-transform:uppercase;color:var(--white);margin-bottom:1rem";
+  var bodyStyle = "color:var(--off-white);font-size:0.95rem;line-height:1.85;font-weight:300;max-width:65ch";
+  document.getElementById('step-content').innerHTML =
+    '<div style="' + tagStyle + '">' + s.tag + '</div>' +
+    '<h3 style="' + titleStyle + '">' + s.title + '</h3>' +
+    '<p style="' + bodyStyle + '">' + s.body + '</p>';
+}
+
+document.querySelectorAll('a[href^="#"]').forEach(function(a){
+  a.addEventListener('click',function(e){
+    var target=document.querySelector(this.getAttribute('href'));
+    if(target){e.preventDefault();target.scrollIntoView({behavior:'smooth'});}
+  });
+});
+</script>
+</body>
+</html>
